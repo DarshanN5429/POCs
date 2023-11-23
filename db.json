@@ -1,0 +1,140 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "The Taj Mahal Palace",
+      "rating": 4.0,
+      "facilities": ["Free WiFi", "Pool", "Spa", "Sea View"],
+      "city": "Bangalore",
+      "lat": 12.965671,
+      "lng": 77.576274, 
+      "link": "https://www.cntraveler.com/hotels/india/jodhpur/umaid-bhawan-palace-taj-jodhpur", 
+      "address": "1 MG Road, Bangalore, Karnataka, India"
+    },
+    {
+      "id": 2,
+      "name": "The Oberoi",
+      "rating": 4.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Bangalore",
+      "lat": 12.972442, 
+      "lng": 77.580643, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi",
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    },
+    {
+      "id": 3,
+      "name": "Hotel Tap Comfort",
+      "rating": 3.9,
+      "facilities": ["Break Fast", "Free Cancellation ", "City View"],
+      "city": "Bangalore",
+      "lat": 12.970092, 
+      "lng": 77.579424, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi", 
+      "address": "1 MG Road, Bangalore, Karnataka, India"
+
+    }, 
+    {
+      "id": 4,
+      "name": "Umaid Bhawan Palace, Jodhpur",
+      "rating": 3.8,
+      "facilities": ["Free WiFi", "Pool", "Spa", "Sea View"],
+      "city": "Jodhpur",
+      "lat": 26.238947,
+      "lng": 73.024307, 
+      "link": "https://www.cntraveler.com/hotels/india/jodhpur/umaid-bhawan-palace-taj-jodhpur", 
+      "address": "Bhawan Road, Jodhpur, Raj, India"
+
+    },
+    {
+      "id": 5,
+      "name": "The Leela Palace, Udaipur",
+      "rating": 4.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Udaipur",
+      "lat": 24.585445, 
+      "lng": 73.712479, 
+      "link": "https://www.cntraveler.com/hotels/india/udaipur/leela-palace-kempinski-udaipur", 
+      "address": "1 MG Road, Udaipur, Raj, India"
+
+    }, {
+      "id": 6,
+      "name": "Taj Lake Palace, Udaipur",
+      "rating": 4.8,
+      "facilities": ["Free WiFi", "Pool", "Spa", "Sea View"],
+      "city": "Udaipur",
+      "lat": 24.585445,
+      "lng": 73.612479, 
+      "link": "https://www.cntraveler.com/hotels/india/udaipur/taj-lake-palace-udaipur", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+      
+    },
+    {
+      "id": 7,
+      "name": "The Imperial",
+      "rating": 2.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "New Delhi",
+      "lat": 28.613939, 
+      "lng": 77.209023, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    }, 
+    {
+      "id": 8,
+      "name": "ITC Maratha",
+      "rating": 2.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Mumbai",
+      "lat": 19.08, 
+      "lng": 72.82, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/itc-maurya-new-delhi", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    }, 
+    {
+      "id": 9,
+      "name": "Novotel Chennai Chamiers Road",
+      "rating": 3.3,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Chennai",
+      "lat": 13.082680, 
+      "lng": 80.270721, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    }, 
+    {
+      "id": 10,
+      "name": "Forte Kochi",
+      "rating": 2.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Kochi",
+      "lat": 9.94, 
+      "lng": 76.259023, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    },
+    {
+      "id": 11,
+      "name": "La Place Sarovar Portico",
+      "rating": 4.9,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Lucknow",
+      "lat": 26.94, 
+      "lng": 80.93, 
+      "link": "https://www.cntraveler.com/hotels/india/new-delhi/the-imperial--new-delhi", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    },
+    {
+      "id": 12,
+      "name": "Taj Lakefront Bhopal",
+      "rating": 3.6,
+      "facilities": ["Free Parking", "Restaurant", "City View"],
+      "city": "Bhopal",
+      "lat": 23.28, 
+      "lng": 77.4599, 
+      "link": "https://www.cntraveler.com/hotels/india/udaipur/taj-lake-palace-udaipur", 
+      "address": "37-39 Mahatma Gandhi Road, Bangalore, Karnataka, India"
+    }
+  ]
+}
+
