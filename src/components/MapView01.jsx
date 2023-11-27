@@ -4,6 +4,7 @@ import React from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import HotelMarker from "./HotelMarker01";
 import MapViewUpdater from "./MapViewUpdater";
+import CityMarker from "./CityMarker";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -41,18 +42,36 @@ const cityCoordinates = {
 const defaultCenterCoordinates = [20.5937, 78.9629]; // Center of India
 const defaultZoom = 5; // Default zoom for showing all of India
 
-const MapView = ({ hotels, selectedCity }) => {
+const MapView = ({ hotels, selectedCity, hotelCountsByCity,onCitySelect }) => {
+  const renderMarkers = () => {
+    if (selectedCity) {
+      return hotels
+        .filter(hotel => hotel.lat && hotel.lng) 
+        .map((hotel) => (
+          <HotelMarker key={hotel.id} hotel={hotel} />
+        ));
+    } else {
+      return Object.keys(cityCoordinates).map((city) => {
+        const position = cityCoordinates[city];
+        const count = hotelCountsByCity && hotelCountsByCity[city];
+        if (position && count !== undefined) { 
+          return <CityMarker key={city} city={city} count={count} position={position} 
+          onCitySelect={onCitySelect}/>;
+        }
+        return null;
+      }).filter(Boolean);
+    }
+  };
+
   return (
     <div className="map-container" style={{ height: "75vh", width: "100%" }}>
       <MapContainer
-        center={defaultCenterCoordinates}
-        zoom={defaultZoom}
+        center={selectedCity ? cityCoordinates[selectedCity] : defaultCenterCoordinates}
+        zoom={selectedCity ? 11 : defaultZoom}
         style={{ height: "100%", width: "100%" }}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {hotels.map((hotel) => (
-          <HotelMarker key={hotel.id} hotel={hotel} />
-        ))}
+        {renderMarkers()}
         <MapViewUpdater
           selectedCity={selectedCity}
           cityCoordinates={cityCoordinates}

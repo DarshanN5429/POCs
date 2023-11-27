@@ -15,10 +15,15 @@ const HomeView = () => {
     handleRatingChange,
     selectedCity,
     ratingFilter,
+    hotelCountsByCity
   } = useHotels();
 
   const toggleView = () => {
     setTableView(!tableView);
+  };
+
+  const handleCitySelect = (cityName) => {
+    handleCityChange({ target: { value: cityName } });
   };
 
   return (
@@ -100,6 +105,8 @@ const HomeView = () => {
               selectedCity={selectedCity}
               ratingFilter={ratingFilter}
               hotels={filteredHotels}
+              hotelCountsByCity = {hotelCountsByCity}
+              onCitySelect={handleCitySelect}
             />
           )}
         </Box>

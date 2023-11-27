@@ -6,6 +6,7 @@ const useHotels = () => {
   const [selectedCity, setSelectedCity] = useState("");
   const [ratingFilter, setRatingFilter] = useState("");
   const [cities, setCities] = useState([]);
+  const [hotelCountsByCity, setHotelCountsByCity] = useState({});
 
   useEffect(() => {
     axios
@@ -16,6 +17,12 @@ const useHotels = () => {
           new Set(response.data.map((hotel) => hotel.city))
         );
         setCities(cityNames);
+        // Calculate hotel counts per city
+        const counts = response.data.reduce((acc, curr) => {
+          acc[curr.city] = (acc[curr.city] || 0) + 1;
+          return acc;
+        }, {});
+        setHotelCountsByCity(counts);
       })
       .catch((error) => console.error("Error fetching hotels:", error));
   }, []);
@@ -63,6 +70,7 @@ const useHotels = () => {
     handleRatingChange,
     selectedCity,
     ratingFilter,
+    hotelCountsByCity
   };
 };
 
